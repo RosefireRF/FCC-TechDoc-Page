@@ -1,0 +1,36 @@
+*{
+    border: 0;
+    padding: 0;
+}
+main{
+    grid-area: main;
+}
+body{
+    display: grid;
+    grid-template-columns: 15% 85%;
+    grid-template-areas: 
+    "nav main"
+}
+#navbar{
+    grid-area: nav;
+    height: 100vh;
+    width: 15%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: stretch;
+    background-color: whitesmoke;
+}
+#navbar > a, #navbar > header{
+    border: 0.5px solid black;
+    font-size: large;
+    height: 16.66%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    font-size: 20px;
+}
