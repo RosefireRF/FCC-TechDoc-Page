@@ -24,6 +24,12 @@ body{
     align-items: stretch;
     background-color: whitesmoke;
 }
+.main-section > header{
+    font-size: 25px;
+}
+.main-section > p{
+    font-size: 20px;
+}
 #navbar > a, #navbar > header{
     border: 0.5px solid black;
     font-size: large;
@@ -33,4 +39,13 @@ body{
     align-items: center;
     text-decoration: none;
     font-size: 20px;
+}
+@media only screen and (max-width: 768px) {
+    body{
+        grid-template-areas: 
+        "main main";
+    }
+    #navbar{
+        display: none;
+    }
 }
